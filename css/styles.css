@@ -40,13 +40,6 @@
     padding-right: 0.35rem;
 }
 
-.encabezado nav ul li:hover{
-    background-color: rgb(250, 121, 16);
-    transform:scale(1.1);
-    box-shadow: 1px 1px 10px black;
-    border-radius: 50px;
-}
-
 /*estilos de footer*/
 .pieDePagina{
     display: column;
