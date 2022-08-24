@@ -1,611 +1,482 @@
-/************************************************************************************************************/
-/*reset*/
-/************************************************************************************************************/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /************************************************************************************************************/
 /*estilos generales*/
 /************************************************************************************************************/
-.bg-menu{
-    background-color:orange;
-}
+.bg-menu {
+  background-color: orange; }
 
-.img-80{
-    width: 80%;
-}
+.img-80 {
+  width: 80%; }
 
-.link:visited{
-    color: gold;
-}
+.link:visited {
+  color: gold; }
 
 /************************************************************************************************************/
 /*estilos de encabezado*/
 /************************************************************************************************************/
-li:hover{
-    background-color: rgb(239, 181, 9);
-    transform:scale(1.1);
-    box-shadow: 1px 1px 5px black;
-    border-radius: 30px;
-}
+li:hover {
+  background-color: #efb509;
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px black;
+  border-radius: 30px; }
 
 /************************************************************************************************************/
 /*estilos de footer*/
 /************************************************************************************************************/
-.pieDePagina{
-    display: column;
-    flex-wrap: nowrap;
-    background-color:black;
-    color:gold;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-
-.pieDePagina h2{
-    font-size: 0.8rem;
-}
-
-.pieDePagina .redesSociales{
+.pieDePagina {
+  display: column;
+  flex-wrap: nowrap;
+  background-color: black;
+  color: gold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%; }
+  .pieDePagina h2 {
+    font-size: 0.8rem; }
+  .pieDePagina .redesSociales {
     display: inline-block;
-    background-color:black;
-    color:gold;
     padding-left: 0.2rem;
-    padding-right: 0.2rem;
-}
-
-.pieDePagina .redesSociales img{
-    width: 20%;
-    height: 20%;
-}
+    padding-right: 0.2rem; }
+    .pieDePagina .redesSociales img {
+      width: 20%;
+      height: 20%; }
 
 /************************************************************************************************************/
 /*ESTILOS PARTICULARES DE INDEX*/
 /*estilos de principal*/
 /************************************************************************************************************/
-.principalIndex{
-    background-color: gold;
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 43% 13% 5% 13% 13% 13%;
-    grid-template-areas: "nosotros nosotros"
-                         "imagenPrincipal imagenPrincipal"
-                         "quienesSomos quienesSomos"
-                         "detalle1 descripcionDetalle1" 
-                         "detalle2 descripcionDetalle2" 
-                         "detalle3 descripcionDetalle3";
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
+.principalIndex {
+  background-color: gold;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 43% 13% 5% 13% 13% 13%;
+  grid-template-areas: "nosotros nosotros" "imagenPrincipal imagenPrincipal" "quienesSomos quienesSomos" "detalle1 descripcionDetalle1" "detalle2 descripcionDetalle2" "detalle3 descripcionDetalle3";
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
 
-.nosotros{
-    display: flex;
-    grid-area: nosotros;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-image: url(../img/fondo-madera.jpg);
-    color: #FFF;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    text-align: center;
-    height: 100%;
-}
-
-.nosotros h1{
-    width: 100%;
-    padding-top:2rem;
-}
-
-.nosotros p{
-    width: 100%;
+.nosotros {
+  display: flex;
+  grid-area: nosotros;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-image: url(../img/fondo-madera.jpg);
+  color: #FFF;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 100%; }
+  .nosotros h1 {
+    padding-top: 2rem; }
+  .nosotros p {
     font-size: 0.8rem;
-    padding-top:2rem;
-    padding-bottom:2rem;
-    line-height: 1.5rem;
-}
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.5rem; }
 
-.imagenPrincipal{
-    grid-area: imagenPrincipal;
+.imagenPrincipal {
+  grid-area: imagenPrincipal;
+  width: 100%;
+  height: 100%; }
+  .imagenPrincipal img {
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
 
-.imagenPrincipal img{
+.quienesSomos {
+  grid-area: quienesSomos;
+  display: flex;
+  background-image: url(../img/fondo-madera.jpg);
+  color: #FFF;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.detalle1 {
+  grid-area: detalle1;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%; }
+  .detalle1 img {
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
 
-.quienesSomos{
-    grid-area: quienesSomos;
-    display: flex;
-    background-image: url(../img/fondo-madera.jpg);
-    color: #FFF;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 1.2rem;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.detalle1{
-    grid-area: detalle1;
-    padding:0.5rem;
-    width: 100%;
-    height: 100%;
-}
-
-.detalle1 img{
-    width: 100%;
-    height: 100%;   
-}
-
-.descripcionDetalle1{
-    grid-area: descripcionDetalle1;
-    color: #000;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding:0.5rem;
-    width: 100%;
-    height: 100%;
-}
-
-.descripcionDetalle1 p{
+.descripcionDetalle1 {
+  grid-area: descripcionDetalle1;
+  color: black;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%; }
+  .descripcionDetalle1 p {
     font-size: 0.6rem;
-    line-height: 1rem;
-}
+    line-height: 1rem; }
 
-.detalle2{
-    grid-area: detalle2;
-    padding:0.5rem;
+.detalle2 {
+  grid-area: detalle2;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%; }
+  .detalle2 img {
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
 
-.detalle2 img{
-    width: 100%;
-    height: 100%;   
-}
-
-.descripcionDetalle2{
-    grid-area: descripcionDetalle2;
-    color: #000;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding:0.5rem;
-    width: 100%;
-    height: 100%;
-}
-
-.descripcionDetalle2 p{
+.descripcionDetalle2 {
+  grid-area: descripcionDetalle2;
+  color: black;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%; }
+  .descripcionDetalle2 p {
     font-size: 0.6rem;
-    line-height: 1rem;
-}
+    line-height: 1rem; }
 
-.detalle3{
-    grid-area: detalle3;
-    padding:0.5rem;
+.detalle3 {
+  grid-area: detalle3;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%; }
+  .detalle3 img {
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
 
-.detalle3 img{
-    width: 100%;
-    height: 100%;   
-}
-
-.descripcionDetalle3{
-    grid-area: descripcionDetalle3;
-    color: #000;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding:0.5rem;
-    width: 100%;
-    height: 100%;
-}
-
-.descripcionDetalle3 p{
+.descripcionDetalle3 {
+  grid-area: descripcionDetalle3;
+  color: black;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%; }
+  .descripcionDetalle3 p {
     font-size: 0.6rem;
-    line-height: 1rem;
-}
+    line-height: 1rem; }
 
 /************************************************************************************************************/
 /*ESTILOS PARTICULARES DE SERVICIOS*/
 /*estilos de principal*/
 /************************************************************************************************************/
-.principalServicios{
-    background-color: gold;
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5% 19% 19% 19% 19% 19%;
-    grid-template-areas: "tituloServicio tituloServicio"
-                         "imagenServicio1 detalleServicio1"
-                         "imagenServicio2 detalleServicio2"
-                         "imagenServicio3 detalleServicio3"
-                         "imagenServicio4 detalleServicio4"
-                         "imagenServicio5 detalleServicio5";
-    align-items: center;
-    padding: 0.5rem;
-}
-
-.principalServicios .tituloServicio{
+.principalServicios {
+  background-color: gold;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5% 19% 19% 19% 19% 19%;
+  grid-template-areas: "tituloServicio tituloServicio" "imagenServicio1 detalleServicio1" "imagenServicio2 detalleServicio2" "imagenServicio3 detalleServicio3" "imagenServicio4 detalleServicio4" "imagenServicio5 detalleServicio5";
+  align-items: center;
+  padding: 0.5rem; }
+  .principalServicios .tituloServicio {
     grid-area: tituloServicio;
     text-align: left;
-    font-size: 0.4rem;
-}
+    font-size: 0.4rem; }
 
-.imagenServicio1{
-    grid-area: imagenServicio1;
-}
-
-.imagenServicio2{
-    grid-area: imagenServicio2;
-}
-
-.imagenServicio3{
-    grid-area: imagenServicio3;
-}
-
-.imagenServicio4{
-    grid-area: imagenServicio4;
-}
-
-.imagenServicio5{
-    grid-area: imagenServicio5;
-}
-
-.imagenServicio1 img, .imagenServicio2 img, .imagenServicio3 img, .imagenServicio4 img, .imagenServicio5 img{
-    height: 100%;
+.imagenServicio1 {
+  grid-area: imagenServicio1; }
+  .imagenServicio1 img {
     width: 100%;
-    padding: 0.5rem;
-}
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleServicio1{
-    grid-area: detalleServicio1;
-}
+.imagenServicio2 {
+  grid-area: imagenServicio2; }
+  .imagenServicio2 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleServicio2{
-    grid-area: detalleServicio2;
-}
+.imagenServicio3 {
+  grid-area: imagenServicio3; }
+  .imagenServicio3 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleServicio3{
-    grid-area: detalleServicio3;
-}
+.imagenServicio4 {
+  grid-area: imagenServicio4; }
+  .imagenServicio4 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleServicio4{
-    grid-area: detalleServicio4;
-}
+.imagenServicio5 {
+  grid-area: imagenServicio5; }
+  .imagenServicio5 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleServicio5{
-    grid-area: detalleServicio5;
-}
+.detalleServicio1 {
+  grid-area: detalleServicio1;
+  font-size: 0.6rem;
+  padding: 1rem; }
 
-.detalleServicio1, .detalleServicio2, .detalleServicio3, .detalleServicio4, .detalleServicio5{
-    font-size: 0.6rem;
-    padding: 1rem;
-}
+.detalleServicio2 {
+  grid-area: detalleServicio2;
+  font-size: 0.6rem;
+  padding: 1rem; }
+
+.detalleServicio3 {
+  grid-area: detalleServicio3;
+  font-size: 0.6rem;
+  padding: 1rem; }
+
+.detalleServicio4 {
+  grid-area: detalleServicio4;
+  font-size: 0.6rem;
+  padding: 1rem; }
+
+.detalleServicio5 {
+  grid-area: detalleServicio5;
+  font-size: 0.6rem;
+  padding: 1rem; }
 
 /************************************************************************************************************/
 /*ESTILOS PARTICULARES DE PRODUCTOS*/
 /*estilos de principal*/
 /************************************************************************************************************/
-.principalProductos{
-    background-color: gold;
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5% 19% 19% 19% 19% 19%;
-    grid-template-areas: "tituloProducto tituloProducto"
-                         "imagenProducto1 detalleProducto1"
-                         "imagenProducto2 detalleProducto2"
-                         "imagenProducto3 detalleProducto3"
-                         "imagenProducto4 detalleProducto4"
-                         "imagenProducto5 detalleProducto5";
-    align-items: center;
-    padding: 0.5rem;
-}
-
-.principalProductos .tituloProducto{
+.principalProductos {
+  background-color: gold;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5% 19% 19% 19% 19% 19%;
+  grid-template-areas: "tituloProducto tituloProducto" "imagenProducto1 detalleProducto1" "imagenProducto2 detalleProducto2" "imagenProducto3 detalleProducto3" "imagenProducto4 detalleProducto4" "imagenProducto5 detalleProducto5";
+  align-items: center;
+  padding: 0.5rem; }
+  .principalProductos .tituloProducto {
     grid-area: tituloProducto;
     text-align: left;
-    font-size: 0.4rem;
-}
+    font-size: 0.4rem; }
 
-.imagenProducto1{
-    grid-area: imagenProducto1;
-}
-
-.imagenProducto2{
-    grid-area: imagenProducto2;
-}
-
-.imagenProducto3{
-    grid-area: imagenProducto3;
-}
-
-.imagenProducto4{
-    grid-area: imagenProducto4;
-}
-
-.imagenProducto5{
-    grid-area: imagenProducto5;
-}
-
-.imagenProducto1 img, .imagenProducto2 img, .imagenProducto3 img, .imagenProducto4 img, .imagenProducto5 img{
-    height: 100%;
+.imagenProducto1 {
+  grid-area: imagenProducto1; }
+  .imagenProducto1 img {
     width: 100%;
-    padding: 0.5rem;
-}
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleProducto1{
-    grid-area: detalleProducto1;
-}
+.imagenProducto2 {
+  grid-area: imagenProducto2; }
+  .imagenProducto2 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleProducto2{
-    grid-area: detalleProducto2;
-}
+.imagenProducto3 {
+  grid-area: imagenProducto3; }
+  .imagenProducto3 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleProducto3{
-    grid-area: detalleProducto3;
-}
+.imagenProducto4 {
+  grid-area: imagenProducto4; }
+  .imagenProducto4 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleProducto4{
-    grid-area: detalleProducto4;
-}
+.imagenProducto5 {
+  grid-area: imagenProducto5; }
+  .imagenProducto5 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem; }
 
-.detalleProducto5{
-    grid-area: detalleProducto5;
-}
+.detalleProducto1 {
+  grid-area: detalleProducto1;
+  font-size: 0.6rem;
+  padding: 1rem; }
 
-.detalleProducto1, .detalleProducto2, .detalleProducto3, .detalleProducto4, .detalleProducto5{
-    font-size: 0.6rem;
-    padding: 1rem;
-}
+.detalleProducto2 {
+  grid-area: detalleProducto2;
+  font-size: 0.6rem;
+  padding: 1rem; }
+
+.detalleProducto3 {
+  grid-area: detalleProducto3;
+  font-size: 0.6rem;
+  padding: 1rem; }
+
+.detalleProducto4 {
+  grid-area: detalleProducto4;
+  font-size: 0.6rem;
+  padding: 1rem; }
+
+.detalleProducto5 {
+  grid-area: detalleProducto5;
+  font-size: 0.6rem;
+  padding: 1rem; }
 
 /************************************************************************************************************/
 /*ESTILOS PARTICULARES DE IMAGENES*/
 /*estilos de principal*/
 /************************************************************************************************************/
-.principalImagenes{
-    background-color: gold;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.principalImagenes img{
+.principalImagenes {
+  background-color: gold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .principalImagenes img {
     height: 18rem;
     width: 18rem;
-    padding: 1rem;
-}
+    padding: 1rem; }
 
 /************************************************************************************************************/
 /*declaramos media queries 
 /************************************************************************************************************/
-
 /* min-width:500px */
-@media screen and  (min-width:500px) {
-
-    .nosotros h1{
-        font-size: 2.5rem;
-    }
-    
-    .nosotros p{
-        font-size: 2rem;
-    }
-
-    .descripcionDetalle1 p{
-        font-size: 1rem;
-    }
-
-    .descripcionDetalle2 p{
-        font-size: 1rem;
-    }
-     
-    .descripcionDetalle3 p{
-        font-size: 1rem;
-    }
-
-    .tituloServicio h1
-    {
-        font-size: 1.6rem;
-    }
-
-    .detalleServicio1, .detalleServicio2, .detalleServicio3, .detalleServicio4, .detalleServicio5{
-        font-size: 1.2rem;
-    }
-
-    
-    .tituloProducto h1
-    {
-        font-size: 1.6rem;
-    }
-
-    .detalleProducto1, .detalleProducto2, .detalleProducto3, .detalleProducto4, .detalleProducto5{
-        font-size: 1.2rem;
-    }
-
-}
+@media screen and (min-width: 500px) {
+  .nosotros h1 {
+    font-size: 2.5rem; }
+  .nosotros p {
+    font-size: 2rem; }
+  .descripcionDetalle1 p {
+    font-size: 1rem; }
+  .descripcionDetalle2 p {
+    font-size: 1rem; }
+  .descripcionDetalle3 p {
+    font-size: 1rem; }
+  .tituloServicio h1 {
+    font-size: 1.6rem; }
+  .detalleServicio1,
+  .detalleServicio2,
+  .detalleServicio3,
+  .detalleServicio4,
+  .detalleServicio5 {
+    font-size: 1.2rem; }
+  .tituloProducto h1 {
+    font-size: 1.6rem; }
+  .detalleProducto1,
+  .detalleProducto2,
+  .detalleProducto3,
+  .detalleProducto4,
+  .detalleProducto5 {
+    font-size: 1.2rem; } }
 
 /* min-width:600px */
+@media screen and (min-width: 600px) {
+  .pieDePagina {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    .pieDePagina h2 {
+      font-size: 1rem; }
+    .pieDePagina .redesSociales img {
+      width: 22%;
+      height: 22%; }
+  .nosotros h1 {
+    font-size: 3rem; }
+  .nosotros p {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    line-height: 3rem; }
+  .quienesSomos {
+    font-size: 2.5rem; }
+  .descripcionDetalle1 {
+    font-size: 2.2rem; }
+    .descripcionDetalle1 p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 1rem; }
+  .descripcionDetalle2 {
+    font-size: 2.2rem; }
+    .descripcionDetalle2 p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 1rem; }
+  .descripcionDetalle3 {
+    font-size: 2.2rem; }
+    .descripcionDetalle3 p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 1rem; }
+  .tituloServicio h1 {
+    font-size: 2.2rem; }
+  .detalleServicio1,
+  .detalleServicio2,
+  .detalleServicio3,
+  .detalleServicio4,
+  .detalleServicio5 {
+    font-size: 1.7rem; }
+  .tituloProducto h1 {
+    font-size: 2.2rem; }
+  .detalleProducto1,
+  .detalleProducto2,
+  .detalleProducto3,
+  .detalleProducto4,
+  .detalleProducto5 {
+    font-size: 1.7rem; } }
 
-    @media screen and  (min-width:600px) {
-
-        .encabezado nav ul li{
-            font-size: 1.9rem;
-            padding-left: 1.3rem;
-            padding-right: 1.3rem;
-        }
-        
-        .pieDePagina{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-        }
-        
-        .pieDePagina h2{
-            font-size: 1rem;
-        }
-    
-        .pieDePagina .redesSociales img{
-            width: 22%;
-            height: 22%;
-        }
-        
-        .nosotros h1{
-            font-size: 3rem;
-        }
-        
-        .nosotros p{
-            font-size: 2.5rem;
-            padding-top:3rem;
-            padding-bottom:3rem;
-            line-height: 3rem;
-        }
-    
-        .quienesSomos{
-            font-size: 2.5rem;
-        }
-        
-        .descripcionDetalle1{
-            font-size: 2.2rem;
-        }
-        
-        .descripcionDetalle1 p{
-            font-size: 1.5rem;
-            line-height: 2rem;
-            padding: 1rem;
-        }
-      
-        .descripcionDetalle2{
-            font-size: 2.2rem;
-        }
-        
-        .descripcionDetalle2 p{
-            font-size: 1.5rem;
-            line-height: 2rem;
-            padding: 1rem;
-        }
-        
-        .descripcionDetalle3{
-            font-size: 2.2rem;
-        }
-        
-        .descripcionDetalle3 p{
-            font-size: 1.5rem;
-            line-height: 2rem;
-            padding: 1rem;
-        }
-        
-        .tituloServicio h1
-        {
-            font-size: 2.2rem;
-        }
-    
-        .detalleServicio1, .detalleServicio2, .detalleServicio3, .detalleServicio4, .detalleServicio5{
-            font-size: 1.7rem;
-        }
-    
-        .tituloProducto h1
-        {
-            font-size: 2.2rem;
-        }
-    
-        .detalleProducto1, .detalleProducto2, .detalleProducto3, .detalleProducto4, .detalleProducto5{
-            font-size: 1.7rem;
-        }
-
-        }    
-
-/* min-width:1000px */        
-
-        @media screen and  (min-width:1000px) {
-
-            .pieDePagina h2{
-                font-size: 1.2rem;
-            }
-        
-            .nosotros h1{
-                font-size: 3.5rem;
-            }
-            
-            .nosotros p{
-                font-size: 3rem;
-                padding: 3rem;
-                line-height: 2rem;
-            }  
-
-            .principalIndex{
-                background-color: gold;
-                display: grid;
-                height: 100%;
-                width: 100%;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 45% 15% 5% 20% 15%;
-                grid-template-areas: "nosotros nosotros nosotros"
-                                     "imagenPrincipal imagenPrincipal imagenPrincipal"
-                                     "quienesSomos quienesSomos quienesSomos"
-                                     "detalle1 detalle2 detalle3" 
-                                     "descripcionDetalle1 descripcionDetalle2 descripcionDetalle3"; 
-                justify-content: center;
-                justify-items: center;
-                align-items: center;
-            }
-
-            .descripcionDetalle1{
-                font-size: 1.8rem;
-                padding-top: 3rem;
-                padding-bottom: 2rem;            
-            }
-            
-            .descripcionDetalle1 p{
-                font-size: 1.4rem;
-                line-height: 2rem;
-                padding: 1rem;
-            }
-          
-            .descripcionDetalle2{
-                font-size: 1.8rem;
-                padding-top: 3rem;
-                padding-bottom: 2rem;            
-            }
-            
-            .descripcionDetalle2 p{
-                font-size: 1.4rem;
-                line-height: 2rem;
-                padding: 1rem;
-            }
-            
-            .descripcionDetalle3{
-                font-size: 1.8rem;
-                padding-top: 3rem;
-                padding-bottom: 2rem;            
-            }
-            
-            .descripcionDetalle3 p{
-                font-size: 1.4rem;
-                line-height: 2rem;
-                padding: 1rem;
-            }
-            
-        }   
+/* min-width:1000px */
+@media screen and (min-width: 1000px) {
+  .pieDePagina h2 {
+    font-size: 1.2rem; }
+  .nosotros h1 h1 {
+    font-size: 3.5rem; }
+  .nosotros h1 p {
+    font-size: 3rem;
+    padding: 3rem;
+    line-height: 2rem; }
+  .principalIndex {
+    background-color: gold;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 45% 15% 5% 20% 15%;
+    grid-template-areas: "nosotros nosotros nosotros" "imagenPrincipal imagenPrincipal imagenPrincipal" "quienesSomos quienesSomos quienesSomos" "detalle1 detalle2 detalle3" "descripcionDetalle1 descripcionDetalle2 descripcionDetalle3";
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+  .descripcionDetalle1 {
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem; }
+    .descripcionDetalle1 p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      padding: 1rem; }
+  .descripcionDetalle2 {
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem; }
+    .descripcionDetalle2 p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      padding: 1rem; }
+  .descripcionDetalle3 {
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem; }
+    .descripcionDetalle3 p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      padding: 1rem; } }

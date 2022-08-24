@@ -1,0 +1,607 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "base/reset";
+
+/************************************************************************************************************/
+/*estilos generales*/
+/************************************************************************************************************/
+.bg-menu {
+    background-color: $color-menu;
+}
+
+.img-80 {
+    width: 80%;
+}
+
+.link:visited {
+    color: $color-link-visitado;
+}
+
+/************************************************************************************************************/
+/*estilos de encabezado*/
+/************************************************************************************************************/
+li:hover {
+    background-color: $color-sobre-boton;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px $color-sobre-boton-sombra;
+    border-radius: 30px;
+}
+
+/************************************************************************************************************/
+/*estilos de footer*/
+/************************************************************************************************************/
+.pieDePagina {
+    display: column;
+    flex-wrap: nowrap;
+    background-color: $color-bg-pie-de-pagina;
+    color: $color-fuente-pie-de-pagina;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include medidas(100%, 100%);
+    h2 {
+        font-size: 0.8rem;
+    }
+    .redesSociales {
+        display: inline-block;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        img {
+            @include medidas(20%, 20%);
+        }
+    }
+}
+
+/************************************************************************************************************/
+/*ESTILOS PARTICULARES DE INDEX*/
+/*estilos de principal*/
+/************************************************************************************************************/
+.principalIndex {
+    background-color: $color-bg-main;
+    display: grid;
+    @include medidas(100%, 100%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 43% 13% 5% 13% 13% 13%;
+    grid-template-areas: "nosotros nosotros"
+        "imagenPrincipal imagenPrincipal"
+        "quienesSomos quienesSomos"
+        "detalle1 descripcionDetalle1"
+        "detalle2 descripcionDetalle2"
+        "detalle3 descripcionDetalle3";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.nosotros {
+    display: flex;
+    grid-area: nosotros;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: url(../img/fondo-madera.jpg);
+    color: $color-fuente-nosotros;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    @include medidas(100%, 100%);
+    h1 {
+        padding-top: 2rem;
+    }
+    p {
+        font-size: 0.8rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        line-height: 1.5rem;
+    }
+}
+
+.imagenPrincipal {
+    grid-area: imagenPrincipal;
+    @include medidas(100%, 100%);
+    img {
+        @include medidas(100%, 100%);
+    }
+}
+
+.quienesSomos {
+    grid-area: quienesSomos;
+    display: flex;
+    background-image: url(../img/fondo-madera.jpg);
+    color: $color-fuente-titulo-quienes-somos;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.2rem;
+    @include medidas(100%, 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+.detalle1 {
+    grid-area: detalle1;
+    padding: 0.5rem;
+    @include medidas(100%, 100%);
+    img {
+        @include medidas(100%, 100%);
+    }
+}
+
+.descripcionDetalle1 {
+    grid-area: descripcionDetalle1;
+    color: $color-fuente-detalle-quienes-somos;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    @include medidas(100%, 100%);
+    p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+}
+
+.detalle2 {
+    grid-area: detalle2;
+    padding: 0.5rem;
+    @include medidas(100%, 100%);
+    img {
+        @include medidas(100%, 100%);
+    }
+}
+.descripcionDetalle2 {
+    grid-area: descripcionDetalle2;
+    color: $color-fuente-detalle-quienes-somos;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    @include medidas(100%, 100%);
+    p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+}
+
+.detalle3 {
+    grid-area: detalle3;
+    padding: 0.5rem;
+    @include medidas(100%, 100%);
+    img {
+        @include medidas(100%, 100%);
+    }
+}
+
+.descripcionDetalle3 {
+    grid-area: descripcionDetalle3;
+    color: $color-fuente-detalle-quienes-somos;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    @include medidas(100%, 100%);
+    p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+}
+
+/************************************************************************************************************/
+/*ESTILOS PARTICULARES DE SERVICIOS*/
+/*estilos de principal*/
+/************************************************************************************************************/
+.principalServicios {
+    background-color: $color-bg-main;
+    display: grid;
+    @include medidas(100%, 100%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5% 19% 19% 19% 19% 19%;
+    grid-template-areas: "tituloServicio tituloServicio"
+        "imagenServicio1 detalleServicio1"
+        "imagenServicio2 detalleServicio2"
+        "imagenServicio3 detalleServicio3"
+        "imagenServicio4 detalleServicio4"
+        "imagenServicio5 detalleServicio5";
+    align-items: center;
+    padding: 0.5rem;
+    .tituloServicio {
+        grid-area: tituloServicio;
+        text-align: left;
+        font-size: 0.4rem;
+    }
+}
+
+.imagenServicio1 {
+    grid-area: imagenServicio1;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.imagenServicio2 {
+    grid-area: imagenServicio2;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.imagenServicio3 {
+    grid-area: imagenServicio3;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.imagenServicio4 {
+    grid-area: imagenServicio4;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.imagenServicio5 {
+    grid-area: imagenServicio5;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.detalleServicio1 {
+    grid-area: detalleServicio1;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+.detalleServicio2 {
+    grid-area: detalleServicio2;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+.detalleServicio3 {
+    grid-area: detalleServicio3;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+.detalleServicio4 {
+    grid-area: detalleServicio4;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+.detalleServicio5 {
+    grid-area: detalleServicio5;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+/************************************************************************************************************/
+/*ESTILOS PARTICULARES DE PRODUCTOS*/
+/*estilos de principal*/
+/************************************************************************************************************/
+.principalProductos {
+    background-color: $color-bg-main;
+    display: grid;
+    @include medidas(100%, 100%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5% 19% 19% 19% 19% 19%;
+    grid-template-areas: "tituloProducto tituloProducto"
+        "imagenProducto1 detalleProducto1"
+        "imagenProducto2 detalleProducto2"
+        "imagenProducto3 detalleProducto3"
+        "imagenProducto4 detalleProducto4"
+        "imagenProducto5 detalleProducto5";
+    align-items: center;
+    padding: 0.5rem;
+    .tituloProducto {
+        grid-area: tituloProducto;
+        text-align: left;
+        font-size: 0.4rem;
+    }
+}
+
+.imagenProducto1 {
+    grid-area: imagenProducto1;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.imagenProducto2 {
+    grid-area: imagenProducto2;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.imagenProducto3 {
+    grid-area: imagenProducto3;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.imagenProducto4 {
+    grid-area: imagenProducto4;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.imagenProducto5 {
+    grid-area: imagenProducto5;
+    img {
+        @include medidas(100%, 100%);
+        padding: 0.5rem;
+    }
+}
+
+.detalleProducto1 {
+    grid-area: detalleProducto1;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+.detalleProducto2 {
+    grid-area: detalleProducto2;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+.detalleProducto3 {
+    grid-area: detalleProducto3;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+.detalleProducto4 {
+    grid-area: detalleProducto4;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+.detalleProducto5 {
+    grid-area: detalleProducto5;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+
+/************************************************************************************************************/
+/*ESTILOS PARTICULARES DE IMAGENES*/
+/*estilos de principal*/
+/************************************************************************************************************/
+.principalImagenes {
+    background-color: $color-bg-main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 18rem;
+        width: 18rem;
+        padding: 1rem;
+    }
+}
+
+/************************************************************************************************************/
+/*declaramos media queries 
+/************************************************************************************************************/
+
+/* min-width:500px */
+@media screen and (min-width:500px) {
+
+    .nosotros{
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+
+    .descripcionDetalle1 p {
+        font-size: 1rem;
+    }
+
+    .descripcionDetalle2 p {
+        font-size: 1rem;
+    }
+
+    .descripcionDetalle3 p {
+        font-size: 1rem;
+    }
+
+    .tituloServicio h1 {
+        font-size: 1.6rem;
+    }
+
+    .detalleServicio1,
+    .detalleServicio2,
+    .detalleServicio3,
+    .detalleServicio4,
+    .detalleServicio5 {
+        font-size: 1.2rem;
+    }
+
+    .tituloProducto h1 {
+        font-size: 1.6rem;
+    }
+
+    .detalleProducto1,
+    .detalleProducto2,
+    .detalleProducto3,
+    .detalleProducto4,
+    .detalleProducto5 {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* min-width:600px */
+
+@media screen and (min-width:600px) {
+
+    .pieDePagina {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        h2 {
+            font-size: 1rem;
+        }
+        .redesSociales {
+            img {
+                @include medidas(22%, 22%);
+            }
+        }
+    }
+
+    .nosotros{
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2.5rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            line-height: 3rem;
+        }
+    }
+
+    .quienesSomos {
+        font-size: 2.5rem;
+    }
+
+    .descripcionDetalle1 {
+        font-size: 2.2rem;
+        p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding: 1rem;
+        }
+    }
+
+    .descripcionDetalle2 {
+        font-size: 2.2rem;
+        p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding: 1rem;
+        }
+    }
+
+    .descripcionDetalle3 {
+        font-size: 2.2rem;
+        p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding: 1rem;
+        }
+    }
+
+    .tituloServicio h1 {
+        font-size: 2.2rem;
+    }
+
+    .detalleServicio1,
+    .detalleServicio2,
+    .detalleServicio3,
+    .detalleServicio4,
+    .detalleServicio5 {
+        font-size: 1.7rem;
+    }
+
+    .tituloProducto h1 {
+        font-size: 2.2rem;
+    }
+
+    .detalleProducto1,
+    .detalleProducto2,
+    .detalleProducto3,
+    .detalleProducto4,
+    .detalleProducto5 {
+        font-size: 1.7rem;
+    }
+
+}
+
+/* min-width:1000px */
+
+@media screen and (min-width:1000px) {
+
+    .pieDePagina h2 {
+        font-size: 1.2rem;
+    }
+
+    .nosotros h1{
+        h1{
+            font-size: 3.5rem;
+        }
+    
+        p{
+            font-size: 3rem;
+            padding: 3rem;
+            line-height: 2rem;
+        }
+    }
+
+    .principalIndex {
+        background-color: $color-bg-main;
+        display: grid;
+        @include medidas(100%, 100%);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 45% 15% 5% 20% 15%;
+        grid-template-areas: "nosotros nosotros nosotros"
+            "imagenPrincipal imagenPrincipal imagenPrincipal"
+            "quienesSomos quienesSomos quienesSomos"
+            "detalle1 detalle2 detalle3"
+            "descripcionDetalle1 descripcionDetalle2 descripcionDetalle3";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .descripcionDetalle1 {
+        font-size: 1.8rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            padding: 1rem;
+        }
+    }
+
+    .descripcionDetalle2 {
+        font-size: 1.8rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            padding: 1rem;
+        }
+    }
+
+    .descripcionDetalle3{
+        font-size: 1.8rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            padding: 1rem;
+        }
+    }
+}
