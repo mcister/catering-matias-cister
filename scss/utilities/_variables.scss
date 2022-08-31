@@ -1,13 +1,13 @@
 //Variables
 
 //colores
-$color-menu:orange;
-$color-link-visitado:gold;
-$color-sobre-boton:rgb(239, 181, 9);
-$color-sobre-boton-sombra:black;
-$color-bg-pie-de-pagina:black;
-$color-fuente-pie-de-pagina:gold;
-$color-bg-main:gold;
-$color-fuente-nosotros:#FFF;
-$color-fuente-titulo-quienes-somos:#FFF;
-$color-fuente-detalle-quienes-somos:black;
+$color-menu:nth($colores, 2);
+$color-link-visitado:nth($colores, 1);
+$color-sobre-boton:nth($colores, 3);
+$color-sobre-boton-sombra:nth($colores, 1);
+$color-bg-pie-de-pagina:nth($colores, 1);
+$color-fuente-pie-de-pagina:nth($colores, 4);
+$color-bg-main:nth($colores, 4);
+$color-fuente-nosotros:nth($colores, 5);
+$color-fuente-titulo-quienes-somos:nth($colores, 5);
+$color-fuente-detalle-quienes-somos:nth($colores, 1);

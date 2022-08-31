@@ -1,0 +1,47 @@
+/* min-width:1000px */
+
+@media screen and (min-width:1000px) {
+
+    .pieDePagina h2 {
+        font-size: 1.2rem;
+    }
+
+    .nosotros h1{
+        h1{
+            font-size: 3.5rem;
+        }
+    
+        p{
+            font-size: 3rem;
+            padding: 3rem;
+            line-height: 2rem;
+        }
+    }
+
+    .principalIndex {
+        background-color: $color-bg-main;
+        display: grid;
+        @include medidas(100%, 100%);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 45% 15% 5% 20% 15%;
+        grid-template-areas: "nosotros nosotros nosotros"
+            "imagenPrincipal imagenPrincipal imagenPrincipal"
+            "quienesSomos quienesSomos quienesSomos"
+            "detalle1 detalle2 detalle3"
+            "descripcionDetalle1 descripcionDetalle2 descripcionDetalle3";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .descripcionDetalle, .descripcionDetalle2, .descripcionDetalle3 {
+        font-size: 1.8rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            padding: 1rem;
+        }
+    }
+}

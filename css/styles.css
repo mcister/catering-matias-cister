@@ -4,8 +4,13 @@
   padding: 0;
   box-sizing: border-box; }
 
+.imagenDetalle img, .imagenServicio1 img, .imagenServicio2 img, .imagenServicio3 img, .imagenServicio4 img, .imagenServicio5 img, .imagenProducto1 img, .imagenProducto2 img, .imagenProducto3 img, .imagenProducto4 img, .imagenProducto5 img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem; }
+
 /************************************************************************************************************/
-/*estilos generales*/
+/*estilos de encabezado*/
 /************************************************************************************************************/
 .bg-menu {
   background-color: orange; }
@@ -13,17 +18,14 @@
 .img-80 {
   width: 80%; }
 
-.link:visited {
-  color: gold; }
-
-/************************************************************************************************************/
-/*estilos de encabezado*/
-/************************************************************************************************************/
 li:hover {
   background-color: #efb509;
   transform: scale(1.1);
   box-shadow: 1px 1px 5px black;
   border-radius: 30px; }
+
+.nav-link:visited {
+  color: black; }
 
 /************************************************************************************************************/
 /*estilos de footer*/
@@ -103,77 +105,45 @@ li:hover {
   justify-content: center;
   align-items: center; }
 
-.detalle1 {
-  grid-area: detalle1;
+.detalle, .detalle1, .detalle2, .detalle3, .detalleServicio1, .detalleServicio2, .detalleServicio3, .detalleServicio4, .detalleServicio5, .detalleProducto1, .detalleProducto2, .detalleProducto3, .detalleProducto4, .detalleProducto5 {
   padding: 0.5rem;
   width: 100%;
   height: 100%; }
-  .detalle1 img {
+  .detalle img, .detalle1 img, .detalle2 img, .detalle3 img, .detalleServicio1 img, .detalleServicio2 img, .detalleServicio3 img, .detalleServicio4 img, .detalleServicio5 img, .detalleProducto1 img, .detalleProducto2 img, .detalleProducto3 img, .detalleProducto4 img, .detalleProducto5 img {
     width: 100%;
     height: 100%; }
+
+.descripcionDetalle, .descripcionDetalle1, .descripcionDetalle2, .descripcionDetalle3 {
+  color: black;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%; }
+  .descripcionDetalle p, .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
+    font-size: 0.6rem;
+    line-height: 1rem; }
+
+.detalle1 {
+  grid-area: detalle1; }
 
 .descripcionDetalle1 {
-  grid-area: descripcionDetalle1;
-  color: black;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0.5rem;
-  width: 100%;
-  height: 100%; }
-  .descripcionDetalle1 p {
-    font-size: 0.6rem;
-    line-height: 1rem; }
+  grid-area: descripcionDetalle1; }
 
 .detalle2 {
-  grid-area: detalle2;
-  padding: 0.5rem;
-  width: 100%;
-  height: 100%; }
-  .detalle2 img {
-    width: 100%;
-    height: 100%; }
+  grid-area: detalle2; }
 
 .descripcionDetalle2 {
-  grid-area: descripcionDetalle2;
-  color: black;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0.5rem;
-  width: 100%;
-  height: 100%; }
-  .descripcionDetalle2 p {
-    font-size: 0.6rem;
-    line-height: 1rem; }
+  grid-area: descripcionDetalle2; }
 
 .detalle3 {
-  grid-area: detalle3;
-  padding: 0.5rem;
-  width: 100%;
-  height: 100%; }
-  .detalle3 img {
-    width: 100%;
-    height: 100%; }
+  grid-area: detalle3; }
 
 .descripcionDetalle3 {
-  grid-area: descripcionDetalle3;
-  color: black;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0.5rem;
-  width: 100%;
-  height: 100%; }
-  .descripcionDetalle3 p {
-    font-size: 0.6rem;
-    line-height: 1rem; }
+  grid-area: descripcionDetalle3; }
 
 /************************************************************************************************************/
 /*ESTILOS PARTICULARES DE SERVICIOS*/
@@ -196,63 +166,33 @@ li:hover {
 
 .imagenServicio1 {
   grid-area: imagenServicio1; }
-  .imagenServicio1 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .imagenServicio2 {
   grid-area: imagenServicio2; }
-  .imagenServicio2 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .imagenServicio3 {
   grid-area: imagenServicio3; }
-  .imagenServicio3 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .imagenServicio4 {
   grid-area: imagenServicio4; }
-  .imagenServicio4 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .imagenServicio5 {
   grid-area: imagenServicio5; }
-  .imagenServicio5 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .detalleServicio1 {
-  grid-area: detalleServicio1;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleServicio1; }
 
 .detalleServicio2 {
-  grid-area: detalleServicio2;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleServicio2; }
 
 .detalleServicio3 {
-  grid-area: detalleServicio3;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleServicio3; }
 
 .detalleServicio4 {
-  grid-area: detalleServicio4;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleServicio4; }
 
 .detalleServicio5 {
-  grid-area: detalleServicio5;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleServicio5; }
 
 /************************************************************************************************************/
 /*ESTILOS PARTICULARES DE PRODUCTOS*/
@@ -275,63 +215,33 @@ li:hover {
 
 .imagenProducto1 {
   grid-area: imagenProducto1; }
-  .imagenProducto1 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .imagenProducto2 {
   grid-area: imagenProducto2; }
-  .imagenProducto2 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .imagenProducto3 {
   grid-area: imagenProducto3; }
-  .imagenProducto3 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .imagenProducto4 {
   grid-area: imagenProducto4; }
-  .imagenProducto4 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .imagenProducto5 {
   grid-area: imagenProducto5; }
-  .imagenProducto5 img {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem; }
 
 .detalleProducto1 {
-  grid-area: detalleProducto1;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleProducto1; }
 
 .detalleProducto2 {
-  grid-area: detalleProducto2;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleProducto2; }
 
 .detalleProducto3 {
-  grid-area: detalleProducto3;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleProducto3; }
 
 .detalleProducto4 {
-  grid-area: detalleProducto4;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleProducto4; }
 
 .detalleProducto5 {
-  grid-area: detalleProducto5;
-  font-size: 0.6rem;
-  padding: 1rem; }
+  grid-area: detalleProducto5; }
 
 /************************************************************************************************************/
 /*ESTILOS PARTICULARES DE IMAGENES*/
@@ -348,36 +258,21 @@ li:hover {
     width: 18rem;
     padding: 1rem; }
 
-/************************************************************************************************************/
-/*declaramos media queries 
-/************************************************************************************************************/
 /* min-width:500px */
 @media screen and (min-width: 500px) {
   .nosotros h1 {
     font-size: 2.5rem; }
   .nosotros p {
     font-size: 2rem; }
-  .descripcionDetalle1 p {
-    font-size: 1rem; }
-  .descripcionDetalle2 p {
-    font-size: 1rem; }
-  .descripcionDetalle3 p {
+  .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
     font-size: 1rem; }
   .tituloServicio h1 {
     font-size: 1.6rem; }
-  .detalleServicio1,
-  .detalleServicio2,
-  .detalleServicio3,
-  .detalleServicio4,
-  .detalleServicio5 {
+  .detalleServicio1, .detalleServicio2, .detalleServicio3, .detalleServicio4, .detalleServicio5 {
     font-size: 1.2rem; }
   .tituloProducto h1 {
     font-size: 1.6rem; }
-  .detalleProducto1,
-  .detalleProducto2,
-  .detalleProducto3,
-  .detalleProducto4,
-  .detalleProducto5 {
+  .detalleProducto1, .detalleProducto2, .detalleProducto3, .detalleProducto4, .detalleProducto5 {
     font-size: 1.2rem; } }
 
 /* min-width:600px */
@@ -400,39 +295,19 @@ li:hover {
     line-height: 3rem; }
   .quienesSomos {
     font-size: 2.5rem; }
-  .descripcionDetalle1 {
+  .descripcionDetalle1, .descripcionDetalle2, .descripcionDetalle3 {
     font-size: 2.2rem; }
-    .descripcionDetalle1 p {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      padding: 1rem; }
-  .descripcionDetalle2 {
-    font-size: 2.2rem; }
-    .descripcionDetalle2 p {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      padding: 1rem; }
-  .descripcionDetalle3 {
-    font-size: 2.2rem; }
-    .descripcionDetalle3 p {
+    .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
       font-size: 1.5rem;
       line-height: 2rem;
       padding: 1rem; }
   .tituloServicio h1 {
     font-size: 2.2rem; }
-  .detalleServicio1,
-  .detalleServicio2,
-  .detalleServicio3,
-  .detalleServicio4,
-  .detalleServicio5 {
+  .detalleServicio1, .detalleServicio2, .detalleServicio3, .detalleServicio4, .detalleServicio5 {
     font-size: 1.7rem; }
   .tituloProducto h1 {
     font-size: 2.2rem; }
-  .detalleProducto1,
-  .detalleProducto2,
-  .detalleProducto3,
-  .detalleProducto4,
-  .detalleProducto5 {
+  .detalleProducto1, .detalleProducto2, .detalleProducto3, .detalleProducto4, .detalleProducto5 {
     font-size: 1.7rem; } }
 
 /* min-width:1000px */
@@ -456,27 +331,11 @@ li:hover {
     justify-content: center;
     justify-items: center;
     align-items: center; }
-  .descripcionDetalle1 {
+  .descripcionDetalle, .descripcionDetalle1, .descripcionDetalle2, .descripcionDetalle3, .descripcionDetalle2, .descripcionDetalle3 {
     font-size: 1.8rem;
     padding-top: 3rem;
     padding-bottom: 2rem; }
-    .descripcionDetalle1 p {
-      font-size: 1.4rem;
-      line-height: 2rem;
-      padding: 1rem; }
-  .descripcionDetalle2 {
-    font-size: 1.8rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem; }
-    .descripcionDetalle2 p {
-      font-size: 1.4rem;
-      line-height: 2rem;
-      padding: 1rem; }
-  .descripcionDetalle3 {
-    font-size: 1.8rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem; }
-    .descripcionDetalle3 p {
+    .descripcionDetalle p, .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
       font-size: 1.4rem;
       line-height: 2rem;
       padding: 1rem; } }

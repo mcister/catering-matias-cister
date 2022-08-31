@@ -1,0 +1,16 @@
+/************************************************************************************************************/
+/*ESTILOS PARTICULARES DE IMAGENES*/
+/*estilos de principal*/
+/************************************************************************************************************/
+.principalImagenes {
+    background-color: $color-bg-main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 18rem;
+        width: 18rem;
+        padding: 1rem;
+    }
+}
