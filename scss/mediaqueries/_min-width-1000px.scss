@@ -2,28 +2,12 @@
 
 @media screen and (min-width:1000px) {
 
-    .pieDePagina h2 {
-        font-size: 1.2rem;
-    }
-
-    .nosotros h1{
-        h1{
-            font-size: 3.5rem;
-        }
-    
-        p{
-            font-size: 3rem;
-            padding: 3rem;
-            line-height: 2rem;
-        }
-    }
-
     .principalIndex {
         background-color: $color-bg-main;
         display: grid;
         @include medidas(100%, 100%);
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 45% 15% 5% 20% 15%;
+        grid-template-rows: 30% 30% 5% 20% 15%;
         grid-template-areas: "nosotros nosotros nosotros"
             "imagenPrincipal imagenPrincipal imagenPrincipal"
             "quienesSomos quienesSomos quienesSomos"
@@ -34,14 +18,49 @@
         align-items: center;
     }
 
+    .nosotros{
+        h1{
+            padding-top: 2rem;
+            font-size: 3rem;
+        }
+    
+        p{
+            font-size: 2.3rem;
+            padding: 2rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    .quienesSomos{
+        h2{
+            font-size: 3rem;
+        }
+    }
+
     .descripcionDetalle, .descripcionDetalle2, .descripcionDetalle3 {
         font-size: 1.8rem;
-        padding-top: 3rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        h3 {
+            font-size: 2rem;
+        }
         p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             line-height: 2rem;
             padding: 1rem;
         }
     }
+
+    .pieDePagina {
+        h2 {
+            font-size: 1.2rem;
+        }
+        .redesSociales {
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+            img {
+                @include medidas(15%, 15%);
+            }
+        }
+    }    
 }

@@ -9,17 +9,17 @@
     width: 80%;
 }
 
-li {
+.nav-item {
     &:hover{
     background-color: $color-sobre-boton;
     transform: scale(1.1);
     box-shadow: 1px 1px 5px $color-sobre-boton-sombra;
     border-radius: 30px;
     }
-}
-
-.nav-link {
-    &:visited{
-        color: $color-link-visitado;
+    .nav-link {
+        &:visited{
+            color: $color-link-visitado;
+        }
     }
 }
+

@@ -1,0 +1,34 @@
+/* min-width:815px */
+@media screen and (min-width:815px) {
+   
+    .nav-item {
+        padding:0.7rem;
+        .nav-link {
+            font-size: 2rem;
+        }
+    }
+
+    .nosotros{
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 3rem;
+        }
+    }
+
+    .quienesSomos{
+        h2{
+            font-size: 2.8rem;
+        }
+    }
+
+    .descripcionDetalle, .descripcionDetalle2, .descripcionDetalle3 {
+        h3 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 2.3rem;
+        }
+    }
+}

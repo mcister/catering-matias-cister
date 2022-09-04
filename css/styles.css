@@ -18,13 +18,13 @@
 .img-80 {
   width: 80%; }
 
-li:hover {
+.nav-item:hover {
   background-color: #efb509;
   transform: scale(1.1);
   box-shadow: 1px 1px 5px black;
   border-radius: 30px; }
 
-.nav-link:visited {
+.nav-item .nav-link:visited {
   color: black; }
 
 /************************************************************************************************************/
@@ -41,14 +41,14 @@ li:hover {
   width: 100%;
   height: 100%; }
   .pieDePagina h2 {
-    font-size: 0.8rem; }
+    font-size: 0.9rem; }
   .pieDePagina .redesSociales {
     display: inline-block;
     padding-left: 0.2rem;
     padding-right: 0.2rem; }
     .pieDePagina .redesSociales img {
-      width: 20%;
-      height: 20%; }
+      width: 10%;
+      height: 10%; }
 
 /************************************************************************************************************/
 /*ESTILOS PARTICULARES DE INDEX*/
@@ -60,11 +60,12 @@ li:hover {
   width: 100%;
   height: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 43% 13% 5% 13% 13% 13%;
+  grid-template-rows: 35% 15% 5% 15% 15% 15%;
   grid-template-areas: "nosotros nosotros" "imagenPrincipal imagenPrincipal" "quienesSomos quienesSomos" "detalle1 descripcionDetalle1" "detalle2 descripcionDetalle2" "detalle3 descripcionDetalle3";
   justify-content: center;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  align-content: center; }
 
 .nosotros {
   display: flex;
@@ -80,9 +81,8 @@ li:hover {
   .nosotros h1 {
     padding-top: 2rem; }
   .nosotros p {
-    font-size: 0.8rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    font-size: 1.4rem;
+    padding: 1rem;
     line-height: 1.5rem; }
 
 .imagenPrincipal {
@@ -117,14 +117,17 @@ li:hover {
   color: black;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  justify-items: center;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 100%;
   height: 100%; }
+  .descripcionDetalle h3, .descripcionDetalle1 h3, .descripcionDetalle2 h3, .descripcionDetalle3 h3 {
+    font-size: 1.1rem; }
   .descripcionDetalle p, .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
-    font-size: 0.6rem;
+    font-size: 1rem;
     line-height: 1rem; }
 
 .detalle1 {
@@ -258,6 +261,23 @@ li:hover {
     width: 18rem;
     padding: 1rem; }
 
+/* min-width:250x */
+@media screen and (min-width: 250px) {
+  .nosotros p {
+    font-size: 0.8rem; }
+  .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
+    font-size: 0.6rem; } }
+
+/* min-width:355px */
+@media screen and (min-width: 355px) {
+  .nosotros p {
+    font-size: 1.2rem; }
+  .pieDePagina h2 {
+    font-size: 0.8rem; }
+  .pieDePagina .redesSociales img {
+    width: 10%;
+    height: 10%; } }
+
 /* min-width:500px */
 @media screen and (min-width: 500px) {
   .nosotros h1 {
@@ -293,14 +313,14 @@ li:hover {
     padding-top: 3rem;
     padding-bottom: 3rem;
     line-height: 3rem; }
-  .quienesSomos {
+  .quienesSomos h2 {
+    font-size: 2.8rem; }
+  .descripcionDetalle h3, .descripcionDetalle1 h3, .descripcionDetalle2 h3, .descripcionDetalle3 h3, .descripcionDetalle2 h3, .descripcionDetalle3 h3 {
     font-size: 2.5rem; }
-  .descripcionDetalle1, .descripcionDetalle2, .descripcionDetalle3 {
-    font-size: 2.2rem; }
-    .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      padding: 1rem; }
+  .descripcionDetalle p, .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 1rem; }
   .tituloServicio h1 {
     font-size: 2.2rem; }
   .detalleServicio1, .detalleServicio2, .detalleServicio3, .detalleServicio4, .detalleServicio5 {
@@ -310,32 +330,78 @@ li:hover {
   .detalleProducto1, .detalleProducto2, .detalleProducto3, .detalleProducto4, .detalleProducto5 {
     font-size: 1.7rem; } }
 
+/* min-width:815px */
+@media screen and (min-width: 815px) {
+  .nav-item {
+    padding: 0.7rem; }
+    .nav-item .nav-link {
+      font-size: 2rem; }
+  .nosotros h1 {
+    font-size: 4rem; }
+  .nosotros p {
+    font-size: 3rem; }
+  .quienesSomos h2 {
+    font-size: 2.8rem; }
+  .descripcionDetalle h3, .descripcionDetalle1 h3, .descripcionDetalle2 h3, .descripcionDetalle3 h3, .descripcionDetalle2 h3, .descripcionDetalle3 h3 {
+    font-size: 2.5rem; }
+  .descripcionDetalle p, .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
+    font-size: 2.3rem; } }
+
 /* min-width:1000px */
 @media screen and (min-width: 1000px) {
-  .pieDePagina h2 {
-    font-size: 1.2rem; }
-  .nosotros h1 h1 {
-    font-size: 3.5rem; }
-  .nosotros h1 p {
-    font-size: 3rem;
-    padding: 3rem;
-    line-height: 2rem; }
   .principalIndex {
     background-color: gold;
     display: grid;
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 45% 15% 5% 20% 15%;
+    grid-template-rows: 30% 30% 5% 20% 15%;
     grid-template-areas: "nosotros nosotros nosotros" "imagenPrincipal imagenPrincipal imagenPrincipal" "quienesSomos quienesSomos quienesSomos" "detalle1 detalle2 detalle3" "descripcionDetalle1 descripcionDetalle2 descripcionDetalle3";
     justify-content: center;
     justify-items: center;
     align-items: center; }
+  .nosotros h1 {
+    padding-top: 2rem;
+    font-size: 3rem; }
+  .nosotros p {
+    font-size: 2.3rem;
+    padding: 2rem;
+    line-height: 2.5rem; }
+  .quienesSomos h2 {
+    font-size: 3rem; }
   .descripcionDetalle, .descripcionDetalle1, .descripcionDetalle2, .descripcionDetalle3, .descripcionDetalle2, .descripcionDetalle3 {
     font-size: 1.8rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem; }
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    .descripcionDetalle h3, .descripcionDetalle1 h3, .descripcionDetalle2 h3, .descripcionDetalle3 h3, .descripcionDetalle2 h3, .descripcionDetalle3 h3 {
+      font-size: 2rem; }
     .descripcionDetalle p, .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       line-height: 2rem;
-      padding: 1rem; } }
+      padding: 1rem; }
+  .pieDePagina h2 {
+    font-size: 1.2rem; }
+  .pieDePagina .redesSociales {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem; }
+    .pieDePagina .redesSociales img {
+      width: 15%;
+      height: 15%; } }
+
+/* min-width:1200px */
+@media screen and (min-width: 1200px) {
+  .nav-item {
+    padding: 1rem; }
+    .nav-item .nav-link {
+      font-size: 2.5rem; }
+  .nosotros h1 {
+    font-size: 3.5rem; }
+  .nosotros p {
+    font-size: 2.8rem;
+    line-height: 3rem; }
+  .descripcionDetalle h3, .descripcionDetalle1 h3, .descripcionDetalle2 h3, .descripcionDetalle3 h3, .descripcionDetalle2 h3, .descripcionDetalle3 h3 {
+    font-size: 2.5rem; }
+  .descripcionDetalle p, .descripcionDetalle1 p, .descripcionDetalle2 p, .descripcionDetalle3 p, .descripcionDetalle2 p, .descripcionDetalle3 p {
+    font-size: 1.8rem; }
+  .pieDePagina h2 {
+    font-size: 1.8rem; } }

@@ -7,7 +7,7 @@
     display: grid;
     @include medidas(100%, 100%);
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 43% 13% 5% 13% 13% 13%;
+    grid-template-rows: 35% 15% 5% 15% 15% 15%;
     grid-template-areas: "nosotros nosotros"
         "imagenPrincipal imagenPrincipal"
         "quienesSomos quienesSomos"
@@ -17,6 +17,7 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    align-content: center;
 }
 
 .nosotros {
@@ -33,9 +34,8 @@
         padding-top: 2rem;
     }
     p {
-        font-size: 0.8rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        font-size: 1.4rem;
+        padding: 1rem;
         line-height: 1.5rem;
     }
 }
@@ -43,7 +43,7 @@
 .imagenPrincipal {
     grid-area: imagenPrincipal;
     @include medidas(100%, 100%);
-    img {
+    img{
         @include medidas(100%, 100%);
     }
 }
@@ -72,13 +72,17 @@
     color: $color-fuente-detalle-quienes-somos;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    justify-items: center;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 1rem;
     @include medidas(100%, 100%);
+    h3{
+        font-size: 1.1rem;
+    }
     p {
-        font-size: 0.6rem;
+        font-size: 1rem;
         line-height: 1rem;
     }
 }
