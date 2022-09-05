@@ -48,7 +48,7 @@
   width: 100%;
   height: 100%; }
   .pieDePagina h2 {
-    font-size: 0.9rem; }
+    font-size: 0.8rem; }
   .pieDePagina .redesSociales {
     display: inline-block;
     padding-left: 0.2rem;
@@ -167,6 +167,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5% 19% 19% 19% 19% 19%;
   grid-template-areas: "tituloServicio tituloServicio" "imagenServicio1 detalleServicio1" "imagenServicio2 detalleServicio2" "imagenServicio3 detalleServicio3" "imagenServicio4 detalleServicio4" "imagenServicio5 detalleServicio5";
+  justify-content: center;
+  align-content: center;
   align-items: center;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
@@ -211,6 +213,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5% 19% 19% 19% 19% 19%;
   grid-template-areas: "tituloProducto tituloProducto" "imagenProducto1 detalleProducto1" "imagenProducto2 detalleProducto2" "imagenProducto3 detalleProducto3" "imagenProducto4 detalleProducto4" "imagenProducto5 detalleProducto5";
+  justify-content: center;
+  align-content: center;
   align-items: center;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
@@ -254,8 +258,8 @@
   justify-content: center;
   align-items: center; }
   .principalImagenes img {
-    height: 18rem;
-    width: 18rem;
+    width: 100%;
+    height: 100%;
     padding: 1rem; }
 
 .principalContacto {
