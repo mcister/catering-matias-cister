@@ -29,9 +29,34 @@
         }
     }
 
+    .principalProductos {
+        .tituloProducto {
+            h1{
+                font-size: 2.5rem;  
+            }
+        }
+    }
+    .detalleProdServ{
+        strong{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2.4rem;
+        }
+    }      
+    .principalServicios {
+        .tituloServicio {
+            h1{
+                font-size: 2.5rem;  
+            }
+        }
+    } 
     .pieDePagina {
         h2 {
             font-size: 1.8rem;
         }
     }    
+    .form-label, .btn{
+        font-size: 1.7rem;
+    }
 }

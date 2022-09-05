@@ -7,6 +7,12 @@
         }
     }
 
+    .detalleProdServ{
+        strong{
+            font-size: 1.2rem;
+        }
+    }    
+
     .pieDePagina {
         h2 {
             font-size: 0.8rem;
@@ -16,6 +22,8 @@
                 @include medidas(10%, 10%);
             }
         }
-    }    
-    
+    }      
+    .form-label, .btn{
+        font-size: 1.7rem;
+    }
 }

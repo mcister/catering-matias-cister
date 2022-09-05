@@ -45,24 +45,26 @@
         }
     }
 
-    .tituloServicio{
-        h1 {
-            font-size: 2.2rem;
+    .principalProductos {
+        .tituloProducto {
+            h1{
+                font-size: 2.3rem;  
+            }
         }
     }
-
-    .detalleServicio1, .detalleServicio2, .detalleServicio3, .detalleServicio4, .detalleServicio5 {
-        font-size: 1.7rem;
-    }
-
-    .tituloProducto{
-        h1 {
-            font-size: 2.2rem;
+    .detalleProdServ{
+        strong{
+            font-size: 2rem;
+        }
+    }    
+    .principalServicios {
+        .tituloServicio {
+            h1{
+                font-size: 2.3rem;  
+            }
         }
     }
-
-    .detalleProducto1, .detalleProducto2, .detalleProducto3, .detalleProducto4, .detalleProducto5 {
-        font-size: 1.7rem;
+    .form-label, .btn{
+        font-size: 3rem;
     }
-
 }

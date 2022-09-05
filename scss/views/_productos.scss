@@ -15,60 +15,56 @@
         "imagenProducto4 detalleProducto4"
         "imagenProducto5 detalleProducto5";
     align-items: center;
-    padding: 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
     .tituloProducto {
         grid-area: tituloProducto;
-        text-align: left;
-        font-size: 0.4rem;
+        h1{
+            text-align: left;
+            font-size: 1.2rem;  
+            padding-bottom: 1rem;
+        }
     }
-}
-
-.imagenProducto1 {
-    @extend .imagenDetalle;
-    grid-area: imagenProducto1;
-}
-
-.imagenProducto2 {
-    @extend .imagenDetalle;
-    grid-area: imagenProducto2;
-}
-
-.imagenProducto3 {
-    @extend .imagenDetalle;
-    grid-area: imagenProducto3;
-}
-
-.imagenProducto4 {
-    @extend .imagenDetalle;
-    grid-area: imagenProducto4;
-}
-
-.imagenProducto5 {
-    @extend .imagenDetalle;
-    grid-area: imagenProducto5;
-}
-
-.detalleProducto1 {
-    @extend .detalle;
-    grid-area: detalleProducto1;
-}
-
-.detalleProducto2 {
-    @extend .detalle;
-    grid-area: detalleProducto2;
-}
-
-.detalleProducto3 {
-    @extend .detalle;
-    grid-area: detalleProducto3;
-}
-
-.detalleProducto4 {
-    @extend .detalle;
-    grid-area: detalleProducto4;
-}
-
-.detalleProducto5 {
-    @extend .detalle;
-    grid-area: detalleProducto5;
+    .imagenProducto1 {
+        @extend .imagenDetalle;
+        grid-area: imagenProducto1;
+    }
+    .imagenProducto2 {
+        @extend .imagenDetalle;
+        grid-area: imagenProducto2;
+    }
+    .imagenProducto3 {
+        @extend .imagenDetalle;
+        grid-area: imagenProducto3;
+    }
+    .imagenProducto4 {
+        @extend .imagenDetalle;
+        grid-area: imagenProducto4;
+    }
+    .imagenProducto5 {
+        @extend .imagenDetalle;
+        grid-area: imagenProducto5;
+    }
+    .detalleProducto1 {
+        @extend .detalleProdServ;
+        grid-area: detalleProducto1;
+    }
+    .detalleProducto2 {
+        @extend .detalleProdServ;
+        grid-area: detalleProducto2;
+    }
+    .detalleProducto3 {
+        @extend .detalleProdServ;
+        grid-area: detalleProducto3;
+    }
+    .detalleProducto4 {
+        @extend .detalleProdServ;
+        grid-area: detalleProducto4;
+    }
+    .detalleProducto5 {
+        @extend .detalleProdServ;
+        grid-area: detalleProducto5;
+    }
 }
