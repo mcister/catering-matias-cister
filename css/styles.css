@@ -68,7 +68,7 @@
   height: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 35% 15% 5% 15% 15% 15%;
-  grid-template-areas: "nosotros nosotros" "imagenPrincipal imagenPrincipal" "quienesSomos quienesSomos" "detalle1 descripcionDetalle1" "detalle2 descripcionDetalle2" "detalle3 descripcionDetalle3";
+  grid-template-areas: "nosotros nosotros" "imagenPrincipal imagenPrincipal" "quienesSomos quienesSomos" "detalle1 descripcionDetalle1" "detalle2 descripcionDetalle2" "detalle3 descripcionDetalle3";
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -166,7 +166,7 @@
   height: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5% 19% 19% 19% 19% 19%;
-  grid-template-areas: "tituloServicio tituloServicio" "imagenServicio1 detalleServicio1" "imagenServicio2 detalleServicio2" "imagenServicio3 detalleServicio3" "imagenServicio4 detalleServicio4" "imagenServicio5 detalleServicio5";
+  grid-template-areas: "tituloServicio tituloServicio" "imagenServicio1 detalleServicio1" "imagenServicio2 detalleServicio2" "imagenServicio3 detalleServicio3" "imagenServicio4 detalleServicio4" "imagenServicio5 detalleServicio5";
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -212,7 +212,7 @@
   height: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5% 19% 19% 19% 19% 19%;
-  grid-template-areas: "tituloProducto tituloProducto" "imagenProducto1 detalleProducto1" "imagenProducto2 detalleProducto2" "imagenProducto3 detalleProducto3" "imagenProducto4 detalleProducto4" "imagenProducto5 detalleProducto5";
+  grid-template-areas: "tituloProducto tituloProducto" "imagenProducto1 detalleProducto1" "imagenProducto2 detalleProducto2" "imagenProducto3 detalleProducto3" "imagenProducto4 detalleProducto4" "imagenProducto5 detalleProducto5";
   justify-content: center;
   align-content: center;
   align-items: center;
